@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.business.zcclddml">
+    <class name="Zccl" table="ZCCL" schema="DMS" lazy="false">
+        <composite-id name="zcclPK" class="ZcclPK">
+            <key-property name="mclh" type="java.lang.String">
+                <column name="MCLH"/>
+            </key-property>
+            <key-property name="zclh" type="java.lang.String">
+                <column name="ZCLH"/>
+            </key-property>
+        </composite-id>
+        <property name="cls" type="java.lang.Integer">
+            <column name="CLS"/>
+        </property>
+        <property name="mclmc" type="java.lang.String">
+            <column name="MCLMC" length="100"/>
+        </property>
+        <property name="zclmc" type="java.lang.String">
+            <column name="ZCLMC" length="100"/>
+        </property>
+        <property name="dw" type="java.lang.String">
+            <column name="DW" length="10"/>
+        </property>
+        <property name="cldj" type="java.lang.Double">
+            <column name="CLDJ" precision="10"/>
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,130 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping package="com.pub.pzjg">
+
+    <class name="com.pub.pzjg.Pzjg" table="T_PZJG" schema="DMS">
+        <comment>车辆配置价格</comment>
+        <id name="vsn" type="java.lang.String">
+            <column name="VSN" length="100"/>
+            <generator class="assigned"></generator>
+        </id>
+        <property name="cpms" type="java.lang.String">
+            <column name="CPMS" length="2000">
+                <comment>产品描述</comment>
+            </column>
+        </property>
+        <property name="pp" type="java.lang.String">
+            <column name="PP" length="100">
+                <comment>品牌</comment>
+            </column>
+        </property>
+        <property name="cx" type="java.lang.String">
+            <column name="CX" length="100">
+                <comment>车系</comment>
+            </column>
+        </property>
+        <property name="cxfl" type="java.lang.String">
+            <column name="CXFL" length="100">
+                <comment>车系分类</comment>
+            </column>
+        </property>
+        <property name="xh" type="java.lang.String">
+            <column name="XH" length="100">
+                <comment>车型代码</comment>
+            </column>
+        </property>
+        <property name="xhms" type="java.lang.String">
+            <column name="XHMS" length="2000">
+                <comment>车型描述</comment>
+            </column>
+        </property>
+        <property name="clys" type="java.lang.String">
+            <column name="CLYS" length="100">
+                <comment>车辆颜色</comment>
+            </column>
+        </property>
+        <property name="pzlx" type="java.lang.String">
+            <column name="PZLX" length="100">
+                <comment>配置类型</comment>
+            </column>
+        </property>
+        <property name="fdjxh" type="java.lang.String">
+            <column name="FDJXH" length="100">
+                <comment>发动机型号</comment>
+            </column>
+        </property>
+        <property name="abs" type="java.lang.String">
+            <column name="ABS" length="100">
+                <comment>ABS</comment>
+            </column>
+        </property>
+        <property name="ns" type="java.lang.String">
+            <column name="NS" length="100">
+                <comment>内饰</comment>
+            </column>
+        </property>
+        <property name="xzj" type="java.lang.String">
+            <column name="XZJ" length="2000">
+                <comment>选装件</comment>
+            </column>
+        </property>
+        <property name="tcrq" type="java.lang.String">
+            <column name="TCRQ" length="8">
+                <comment>停产日期</comment>
+            </column>
+        </property>
+        <property name="yswd" type="java.lang.String">
+            <column name="YSWD" length="1">
+                <comment>颜色未定(1表示未定)</comment>
+            </column>
+        </property>
+        <property name="zt" type="java.lang.String">
+            <column name="ZT" length="1">
+                <comment>状态(1表示正常，0表示停产)</comment>
+            </column>
+        </property>
+        <property name="dj" type="java.lang.Double">
+            <column name="DJ" precision="18">
+                <comment>单价（卖给经销商的单价）</comment>
+            </column>
+        </property>
+        <property name="xsj" type="java.lang.Double">
+            <column name="XSJ" precision="18">
+                <comment>销售价(卖给客户的单价)</comment>
+            </column>
+        </property>
+        <property name="cbj" type="java.lang.Double">
+            <column name="CBJ" precision="18">
+                <comment>成本价</comment>
+            </column>
+        </property>
+        <property name="wddbj" type="java.lang.Double">
+            <column name="WDDBJ" precision="18">
+                <comment>网点调拨价</comment>
+            </column>
+        </property>
+        <property name="zdxsj" type="java.lang.Double">
+            <column name="ZDXSJ" precision="18">
+                <comment>最低销售限价(卖给客户)</comment>
+            </column>
+        </property>
+        <property name="memo" type="java.lang.String">
+            <column name="MEMO" length="2000">
+                <comment>备注</comment>
+            </column>
+        </property>
+        <property name="czymc" type="java.lang.String">
+            <column name="CZYMC" length="100">
+                <comment>操作员名称</comment>
+            </column>
+        </property>
+        <property name="czrq" type="java.lang.String">
+            <column name="CZRQ" length="8">
+                <comment>操作日期</comment>
+            </column>
+        </property>
+    </class>
+</hibernate-mapping>                                                                            

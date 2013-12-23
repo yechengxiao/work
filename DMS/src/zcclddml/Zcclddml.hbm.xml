@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.business.zcclddml">
+    <class name="Zcclddml" table="ZCCLDDML" schema="DMS">
+        <id name="zyh" type="java.lang.String">
+            <column name="ZYH" length="12"/>
+            <generator class="assigned"/>
+        </id>
+        <property name="ckh" type="java.lang.String">
+            <column name="CKH" length="10" not-null="true"/>
+        </property>
+        <property name="ckjc" type="java.lang.String">
+            <column name="CKJC" length="20"/>
+        </property>
+        <property name="ddh" type="java.lang.String">
+            <column name="DDH" length="10"/>
+        </property>
+        <property name="czymc" type="java.lang.String">
+            <column name="CZYMC" length="100"/>
+        </property>
+        <property name="czsj" type="java.lang.String">
+            <column name="CZSJ" length="14"/>
+        </property>
+        <property name="clh" type="java.lang.String">
+            <column name="CLH" length="20" not-null="true"/>
+        </property>
+        <property name="clmc" type="java.lang.String">
+            <column name="CLMC" length="100"/>
+        </property>
+        <property name="cls" type="java.lang.Double">
+            <column name="CLS" precision="4" scale="1"/>
+        </property>
+        <property name="dw" type="java.lang.String">
+            <column name="DW" length="10"/>
+        </property>
+        <property name="cldj" type="java.lang.Double">
+            <column name="CLDJ" precision="10"/>
+        </property>
+        <property name="ywm" type="java.lang.String">
+            <column name="YWM" length="40"/>
+        </property>
+        <property name="th" type="java.lang.String">
+            <column name="TH" length="20"/>
+        </property>
+        <property name="clzjz" type="java.lang.Double">
+            <column name="CLZJZ" precision="18"/>
+        </property>
+        <property name="cfhjz" type="java.lang.Double">
+            <column name="CFHJZ" precision="18"/>
+        </property>
+        <property name="zt" type="java.lang.String">
+            <column name="ZT" length="1"/>
+        </property>
+        <property name="shr" type="java.lang.String">
+            <column name="SHR" length="100"/>
+        </property>
+        <property name="shsj" type="java.lang.String">
+            <column name="SHSJ" length="14"/>
+        </property>
+        <property name="memo" type="java.lang.String">
+            <column name="MEMO" length="400"/>
+        </property>
+    </class>
+</hibernate-mapping>

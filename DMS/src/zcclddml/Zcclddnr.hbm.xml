@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.business.zcclddml">
+    <class name="Zcclddnr" table="ZCCLDDNR" schema="DMS">
+        <composite-id name="zcclddnrPK" class="ZcclddnrPK">
+            <key-property name="zyh" type="java.lang.String">
+                <column name="ZYH" length="12"/>
+            </key-property>
+            <key-property name="clh" type="java.lang.String">
+                <column name="CLH" length="20"/>
+            </key-property>
+        </composite-id>
+        <property name="clmc" type="java.lang.String">
+            <column name="CLMC" length="100"/>
+        </property>
+        <property name="cls" type="java.lang.Double">
+            <column name="CLS" precision="4" scale="1"/>
+        </property>
+        <property name="dw" type="java.lang.String">
+            <column name="DW" length="10"/>
+        </property>
+        <property name="cldj" type="java.lang.Double">
+            <column name="CLDJ" precision="10"/>
+        </property>
+        <property name="ywm" type="java.lang.String">
+            <column name="YWM" length="40"/>
+        </property>
+        <property name="memo" type="java.lang.String">
+            <column name="MEMO" length="400"/>
+        </property>
+        <property name="th" type="java.lang.String">
+            <column name="TH" length="20"/>
+        </property>
+    </class>
+</hibernate-mapping>
