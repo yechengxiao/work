@@ -1,7 +1,7 @@
 <%--
 	模块名称：Bjkc、Bzk选择页面
 	描述：
-	作者： 叶成潇
+	作者： ycx
 	创建日期：2013-06
 --%>
 <%@ page language="java" import="com.pub.init.SysConstance" pageEncoding="UTF-8" %>
