@@ -1,7 +1,7 @@
 <%--
 	模块名称：ZB，备件报废，新增页面
 	描述：
-	作者： 叶成潇
+	作者： ycx
 	创建日期：2013-06
 --%>
 <%@ page contentType="text/html;charset=UTF-8" %>
