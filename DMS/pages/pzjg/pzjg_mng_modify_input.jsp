@@ -1,7 +1,7 @@
 <%--
 	模块名称：总部端，整车物料库_修改页面
 	描述：
-	作者： 叶成潇
+	作者： ycx
 	创建日期：2013-05
 --%>
 <%@ page contentType="text/html;charset=UTF-8" %>
